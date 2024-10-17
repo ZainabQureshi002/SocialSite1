@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+    
 }
 body{
     background-color: lightgrey;
@@ -19,7 +21,7 @@ nav{
 }
 .logo{
     width: 160px;
-    margin: 45px;
+    margin: 4px;
 }
 .nav-left, .nav-right{
     display: flex;
@@ -94,6 +96,10 @@ width: 18px;
     position: sticky;
     top: 70px;
     align-self: flex-start;
+    background-color: #fff;
+    padding: 20px;
+    border-radius:4px;
+    color: #626262;
   
 
 }
@@ -131,11 +137,103 @@ margin-right: 15px;
 .sidebar-title {
 display: flex;
 align-items: center;
-justify-content: space space-between;
+justify-content:  space-between;
 margin-bottom: 18px;
 }
-.sidebar-title h4{
-    font-weight: 600;
+.right-sidebar h4{
+     font-weight: 600;
     font-size: 16px;
 }
+.sidebar-title a{
+    text-decoration: none;
+    color: 1876f2;
+    font-size: 12px;
+}
+.event{
+    display: flex;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+.left-event{
+    border-radius: 10px;
+    height: 65px;
+    width:65px;
+    margin-right:15px;
+    padding-top: 10px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+   box-shadow: 0 0 10px  rgba(0, 0, 0, 0.1 );
+ 
+ }
+ .event p{
+    font-size: 12px;
+ }
+.event a{
+    font-size: 12px;
+    text-decoration:none;
+    color: #1876f2;
+}
+.left-event span{
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1876f2;
+    font-size: 10px;
+    padding: 4px 0;
 
+}
+.sidebar-ads{
+    width: 100%;
+    margin-bottom: 20ox;
+    border-radius: 4px;
+}
+.online-list{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; 
+}
+.online-list .online img{
+    width: 40px;
+    border-radius: 50%;
+}
+.online-list .online{
+    width:40px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.online-list .online::after{
+    top:unset;
+    bottom:5px;
+}
+ .story-gallery{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+ }
+ .story{
+    flex-basis: 18%;
+    padding-top: 32%;
+    position: relative;
+    background-image: linear-gradient(transparent, rgba(0,0,0,0.5)), url(ImagsfromWebsite/images/status-1.png);
+    background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+ }
+ .story img{
+    position: absolute;
+    width: 45px;
+    border-radius: 50%;
+    top: 10px;
+    left: 10px;
+    border-radius: 5px solid #626262;
+     } 
+     .story p{
+        position: absolute;
+        bottom: 10px;
+        text-align: center;
+        width: 100%;
+        color: #fff;
+        font-size: 14px;
+     }
