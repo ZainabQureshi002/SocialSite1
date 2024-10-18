@@ -387,7 +387,7 @@ margin-bottom: 18px;
                 padding: 10px 0 20px;
                 font-size: 13px;
             }
-            .settings-menue{
+            .settings-menu{
                 position: absolute;
                 width: 90%;
                 max-width: 350px;
@@ -398,6 +398,11 @@ margin-bottom: 18px;
                 overflow: hidden;
                 top: 108%;
                 right: 5%;
+                max-height: 0;
+                transition: max-height 0.3s;
+            }
+            .settings-menu-height{
+                max-height: 450px;
             }
             .user-profile a {
                 font-size: 12px;
@@ -405,11 +410,11 @@ margin-bottom: 18px;
                 text-decoration: none;
 
             }
-            .setting-menue-inner{
+            .setting-menu-inner{
                 padding: 20px;
 
             }
-            .settings-menue hr{
+            .settings-menu hr{
                 border: 0;
                 height: 1px;
                 background-color: #9a9a9a;
@@ -426,5 +431,28 @@ margin-bottom: 18px;
                 border-radius: 50%;
                 
             }
+            #dark-btn{
+                position: absolute;
+                top: 20px;
+                right:20px;
+                background:#CCC;
+            width: 45px;
+            border-radius: 15px;
+            padding: 2px 3px;
+            cursor: pointer;
+            display: flex;
+            }
+            #dark-btn span{
+                width: 18px;
+                height: 18px;
+                background: #fff;
+                border-radius: 50%;
+                display: inline-block;
+            }
+            #dark-btn.dark-btn-on{
+                padding:50px
+            }
+
+            
 
     
